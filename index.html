@@ -114,7 +114,6 @@
 
             <div class="flex gap-6 items-center">
                 <a href="shop.html" class="bg-blue-600 mt-4 text-white py-5 px-20 font-bold text-lg rounded-lg inline-block transition-all duration-300 ease-in-out  hover:bg-blue-100 hover:text-blue-600 hover:shadow-lg hover:scale-105 active:scale-95">SHOP NOW</a>
-
                 <a href="https://wa.me/6281907165113?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20mu!" 
                     target="_blank" 
                     class="mt-4 items-center border-2  border-blue-400 text-blue-400 px-6 py-4 rounded-md transition-all duration-300 ease-in-out hover:bg-blue-500 hover:text-white hover:shadow-lg hover:scale-105 active:scale-95 ">
@@ -123,16 +122,13 @@
                 </a>
             </div>
         </div>
-
-        
-            <div class="w-full md:w-1/2 swiperHero">
-                <div class="swiper-wrapper">
-                    <img src="icons/hero-cover-1.png" alt="New Collection" class="swiper-slider rounded-lg">
-                    <img src="icons/hero-cover-1.png" alt="New Collection" class="swiper-slider rounded-lg">
-                    <img src="icons/hero-cover-1.png" alt="New Collection" class="swiper-slider rounded-lg">
-                </div>
-                
+        <div class="w-1/2 swiperHero overflow-hidden">
+            <div class="swiper-wrapper">
+                <img src="icons/hero-cover-1.png" alt="New Collection" class="swiper-slide rounded-lg">
+                <img src="icons/hero-cover-1.png" alt="New Collection" class="swiper-slide rounded-lg">
+                <img src="icons/hero-cover-1.png" alt="New Collection" class="swiper-slide rounded-lg">
             </div>
+        </div>
         
         
     </section>
@@ -562,54 +558,8 @@
     </footer>
     
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-        slidesPerView: 4,
-        direction : 'horizontal',
-        loop: true,
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            640: {
-            slidesPerView: 2,
-            },
-            768: {
-            slidesPerView: 3,
-            },
-            1024: {
-            slidesPerView: 4,
-            },
-        },
-    });
-    </script>
-
-    <script>
-        const swiperHero = new Swiper('.swiperHero', {
-        slidesPerView: 3,
-        direction : 'horizontal',
-        loop: true,
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            640: {
-            slidesPerView: 2,
-            },
-            768: {
-            slidesPerView: 3,
-            },
-            1024: {
-            slidesPerView: 4,
-            },
-        },
-    });
-    </script>
-
+    <script src="main.js"></script>
+    
     
 </body>
 </html>
